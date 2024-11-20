@@ -5,6 +5,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
 
 # 设置关键词和爬取数量
 SEARCH_QUERY = 'weex'
@@ -98,6 +102,42 @@ def save_to_csv(videos, output_file):
                 'Publish Time': video['publish_time']
             })
 
+def generate_wordcloud_with_shape(titles, shape_image='weex.png', output_file='wordcloud.png'):
+    """
+    根据视频标题生成特定形状的词云图片
+    :param titles: 视频标题列表
+    :param shape_image: 用于定义词云形状的图片路径
+    :param output_file: 保存词云图片的文件路径
+    """
+    # 将所有标题合并成一个字符串
+    text = ' '.join(titles)
+    
+    # 加载形状图片并转换为数组
+    mask = np.array(Image.open(shape_image))
+    
+    # 初始化词云对象
+    wordcloud = WordCloud(
+        width=800,
+        height=800,
+        background_color='white',
+        mask=mask,
+        contour_width=1,
+        contour_color='black',
+        colormap='viridis',
+        max_words=200
+    ).generate(text)
+    
+    # 显示词云
+    plt.figure(figsize=(10, 10))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.title("Video Titles Word Cloud (Custom Shape)", fontsize=20)
+    plt.show()
+    
+    # 保存词云到文件
+    wordcloud.to_file(output_file)
+    print(f"词云已保存到 {output_file}")
+
 def main():
     print("当前工作目录:", os.getcwd())
     videos = fetch_youtube_videos(SEARCH_QUERY, MAX_RESULTS, SEARCH_PATTERNS)
@@ -106,5 +146,18 @@ def main():
     save_to_csv(videos, OUTPUT_CSV)
     print(f"数据已保存到 {OUTPUT_CSV}")
 
+    return videos  # 返回视频信息列表
+
+
 if __name__ == '__main__':
-    main()
+    videos = main()  # 接收爬取到的视频信息
+    if videos:
+        titles = [video['title'] for video in videos]  # 提取标题
+        # 生成特定形状的词云
+        generate_wordcloud_with_shape(
+            titles,
+            shape_image='weex.png',  # 替换为你的形状图片路径
+            output_file='youtube_titles_wordcloud.png'
+        )
+    else:
+        print("未获取到视频信息，无法生成词云。")
