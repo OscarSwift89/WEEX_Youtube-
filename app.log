@@ -14064,3 +14064,214 @@ INFO:root:词云已保存到: c:\Users\lenovo\Downloads\WEEX_Youtube-\wordcloud_output
 2024-11-21 07:55:51,292 - DEBUG - STREAM b'IDAT' 197 2617
 2024-11-21 07:55:51,778 - INFO - 词云已保存到 c:\Users\lenovo\Downloads\WEEX_Youtube-\youtube_titles_wordcloud.png
 2024-11-21 07:55:51,778 - INFO - 程序结束运行
+2024-11-21 08:18:03,173 - INFO - 所有依赖库加载成功
+2024-11-21 08:18:03,175 - INFO - 程序开始运行
+2024-11-21 08:18:20,400 - DEBUG - Selenium Manager binary found at: C:\Users\lenovo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-11-21 08:18:20,401 - DEBUG - Executing process: C:\Users\lenovo\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-11-21 08:18:21,519 - DEBUG - Found chromedriver 131.0.6778.69 in PATH: chromedriver.EXE
+2024-11-21 08:18:21,519 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-21 08:18:21,520 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-11-21 08:18:21,520 - DEBUG - Output: "\r\r\n\r\r\nVersion=131.0.6778.86\r\r\n\r\r\n\r\r\n\r"
+2024-11-21 08:18:21,520 - DEBUG - Detected browser: chrome 131.0.6778.86
+2024-11-21 08:18:21,520 - DEBUG - Required driver: chromedriver 131.0.6778.85
+2024-11-21 08:18:21,520 - DEBUG - Driver path: chromedriver.EXE
+2024-11-21 08:18:21,520 - DEBUG - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-21 08:18:21,534 - DEBUG - Started executable: `chromedriver.EXE` in a child process with pid: 10152 using 0 to output -3
+2024-11-21 08:18:22,093 - DEBUG - POST http://localhost:65305/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+2024-11-21 08:18:22,094 - DEBUG - Starting new HTTP connection (1): localhost:65305
+2024-11-21 08:18:25,769 - DEBUG - http://localhost:65305 "POST /session HTTP/11" 200 0
+2024-11-21 08:18:25,769 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.86","chrome":{"chromedriverVersion":"131.0.6778.69 (77e2244bbcda3ab9362d5b8aeeb006a86a6d4832-refs/branch-heads/6778@{#2141})","userDataDir":"C:\\Users\\lenovo\\AppData\\Local\\Temp\\scoped_dir10152_1779888200"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:65308"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"3fe8745fe44366776f639b97e525eca8"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:25,770 - DEBUG - Finished Request
+2024-11-21 08:18:25,770 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/url {'url': 'https://www.youtube.com'}
+2024-11-21 08:18:30,614 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/url HTTP/11" 200 0
+2024-11-21 08:18:30,614 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:30,615 - DEBUG - Finished Request
+2024-11-21 08:18:30,615 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/element {'using': 'css selector', 'value': '[name="search_query"]'}
+2024-11-21 08:18:31,233 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/element HTTP/11" 200 0
+2024-11-21 08:18:31,234 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.DFC4EA07E96906718711D66DF8F4A419.d.243AFA50CDC5D221CF506B49F9A0A220.e.7"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:31,234 - DEBUG - Finished Request
+2024-11-21 08:18:31,234 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/element/f.DFC4EA07E96906718711D66DF8F4A419.d.243AFA50CDC5D221CF506B49F9A0A220.e.7/value {'text': 'gate exchange', 'value': ['g', 'a', 't', 'e', ' ', 'e', 'x', 'c', 'h', 'a', 'n', 'g', 'e']}
+2024-11-21 08:18:31,582 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/element/f.DFC4EA07E96906718711D66DF8F4A419.d.243AFA50CDC5D221CF506B49F9A0A220.e.7/value HTTP/11" 200 0
+2024-11-21 08:18:31,584 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:31,584 - DEBUG - Finished Request
+2024-11-21 08:18:31,585 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/element/f.DFC4EA07E96906718711D66DF8F4A419.d.243AFA50CDC5D221CF506B49F9A0A220.e.7/value {'text': '\ue006', 'value': ['\ue006']}
+2024-11-21 08:18:31,827 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/element/f.DFC4EA07E96906718711D66DF8F4A419.d.243AFA50CDC5D221CF506B49F9A0A220.e.7/value HTTP/11" 200 0
+2024-11-21 08:18:31,827 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:31,827 - DEBUG - Finished Request
+2024-11-21 08:18:34,829 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:34,943 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:34,944 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:34,944 - DEBUG - Finished Request
+2024-11-21 08:18:34,944 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:34,965 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:34,965 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:34,966 - DEBUG - Finished Request
+2024-11-21 08:18:36,967 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:36,980 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:36,980 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:36,980 - DEBUG - Finished Request
+2024-11-21 08:18:36,980 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:36,989 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:36,989 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:36,990 - DEBUG - Finished Request
+2024-11-21 08:18:38,990 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:39,003 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:39,004 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:39,004 - DEBUG - Finished Request
+2024-11-21 08:18:39,004 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:39,014 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:39,014 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:39,014 - DEBUG - Finished Request
+2024-11-21 08:18:41,015 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:41,029 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:41,029 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:41,030 - DEBUG - Finished Request
+2024-11-21 08:18:41,030 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:41,039 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:41,040 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:41,040 - DEBUG - Finished Request
+2024-11-21 08:18:43,041 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:43,055 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:43,055 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:43,056 - DEBUG - Finished Request
+2024-11-21 08:18:43,056 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:43,067 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:43,067 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:43,068 - DEBUG - Finished Request
+2024-11-21 08:18:45,069 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:45,090 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:45,090 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:45,090 - DEBUG - Finished Request
+2024-11-21 08:18:45,091 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:45,103 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:45,103 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:45,103 - DEBUG - Finished Request
+2024-11-21 08:18:47,104 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:47,118 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:47,118 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:47,118 - DEBUG - Finished Request
+2024-11-21 08:18:47,119 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:47,129 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:47,129 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:47,129 - DEBUG - Finished Request
+2024-11-21 08:18:49,130 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:49,143 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:49,143 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:49,144 - DEBUG - Finished Request
+2024-11-21 08:18:49,144 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:49,154 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:49,154 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:49,154 - DEBUG - Finished Request
+2024-11-21 08:18:51,155 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:51,170 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:51,170 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:51,170 - DEBUG - Finished Request
+2024-11-21 08:18:51,170 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:51,182 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:51,182 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:51,182 - DEBUG - Finished Request
+2024-11-21 08:18:53,183 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:53,196 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:53,196 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:53,197 - DEBUG - Finished Request
+2024-11-21 08:18:53,197 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:53,208 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:53,208 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:53,208 - DEBUG - Finished Request
+2024-11-21 08:18:55,209 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:55,224 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:55,225 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:55,225 - DEBUG - Finished Request
+2024-11-21 08:18:55,225 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:55,235 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:55,236 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:55,236 - DEBUG - Finished Request
+2024-11-21 08:18:57,237 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:57,254 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:57,254 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:57,254 - DEBUG - Finished Request
+2024-11-21 08:18:57,254 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:57,278 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:57,279 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:57,279 - DEBUG - Finished Request
+2024-11-21 08:18:59,279 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:18:59,293 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:18:59,293 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:59,293 - DEBUG - Finished Request
+2024-11-21 08:18:59,293 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:18:59,305 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:18:59,305 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:18:59,305 - DEBUG - Finished Request
+2024-11-21 08:19:01,306 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:01,321 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:01,322 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:01,322 - DEBUG - Finished Request
+2024-11-21 08:19:01,322 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:01,332 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:01,332 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:01,332 - DEBUG - Finished Request
+2024-11-21 08:19:03,333 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:03,347 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:03,347 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:03,347 - DEBUG - Finished Request
+2024-11-21 08:19:03,348 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:03,358 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:03,358 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:03,359 - DEBUG - Finished Request
+2024-11-21 08:19:05,360 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:05,373 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:05,373 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:05,373 - DEBUG - Finished Request
+2024-11-21 08:19:05,373 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:05,383 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:05,383 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:05,383 - DEBUG - Finished Request
+2024-11-21 08:19:07,384 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:07,396 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:07,396 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:07,397 - DEBUG - Finished Request
+2024-11-21 08:19:07,397 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:07,406 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:07,406 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:07,406 - DEBUG - Finished Request
+2024-11-21 08:19:09,407 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:09,420 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:09,420 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:09,420 - DEBUG - Finished Request
+2024-11-21 08:19:09,420 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:09,429 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:09,430 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:09,430 - DEBUG - Finished Request
+2024-11-21 08:19:11,430 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:11,444 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:11,445 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:11,445 - DEBUG - Finished Request
+2024-11-21 08:19:11,445 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:11,457 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:11,457 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:11,457 - DEBUG - Finished Request
+2024-11-21 08:19:13,458 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:13,472 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:13,472 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:13,472 - DEBUG - Finished Request
+2024-11-21 08:19:13,472 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:13,482 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:13,482 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:13,482 - DEBUG - Finished Request
+2024-11-21 08:19:15,483 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/elements {'using': 'css selector', 'value': 'ytd-video-renderer'}
+2024-11-21 08:19:15,496 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/elements HTTP/11" 200 0
+2024-11-21 08:19:15,496 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:15,496 - DEBUG - Finished Request
+2024-11-21 08:19:15,496 - DEBUG - POST http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8/execute/sync {'script': 'window.scrollTo(0, document.documentElement.scrollHeight);', 'args': []}
+2024-11-21 08:19:15,506 - DEBUG - http://localhost:65305 "POST /session/3fe8745fe44366776f639b97e525eca8/execute/sync HTTP/11" 200 0
+2024-11-21 08:19:15,506 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:15,506 - DEBUG - Finished Request
+2024-11-21 08:19:17,507 - WARNING - 已达到最大滚动次数，结束爬取
+2024-11-21 08:19:17,509 - DEBUG - DELETE http://localhost:65305/session/3fe8745fe44366776f639b97e525eca8 {}
+2024-11-21 08:19:17,653 - DEBUG - http://localhost:65305 "DELETE /session/3fe8745fe44366776f639b97e525eca8 HTTP/11" 200 0
+2024-11-21 08:19:17,654 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 08:19:17,654 - DEBUG - Finished Request
+2024-11-21 08:19:24,177 - INFO - 共获取到 0 条符合条件的视频信息
+2024-11-21 08:19:24,178 - WARNING - 没有数据可写入 CSV 文件！
+2024-11-21 08:19:24,179 - WARNING - 未获取到符合条件的视频信息
+2024-11-21 08:19:24,179 - INFO - 程序结束运行
