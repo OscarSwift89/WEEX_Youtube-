@@ -12,12 +12,23 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
+def resource_path(relative_path):
+    """获取资源文件的正确路径（支持打包后使用）"""
+    if hasattr(sys, '_MEIPASS'):  # PyInstaller 打包后的临时路径
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+# 在加载资源文件时，调用 resource_path 函数
+shape_image = resource_path("weex.png")  # 替换形状图片路径
+font_path = resource_path("C:/Windows/Fonts/msyh.ttc")   # 替换字体路径
+
+
 ####################################################################################
 # 配置日志记录
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 设置默认爬取数量和输出文件
-MAX_RESULTS = 100
+MAX_RESULTS = 1000
 OUTPUT_CSV = 'youtube_videos_filtered.csv'
 
 def matches_keywords(text, patterns):
@@ -174,13 +185,24 @@ def main():
     ]
     logging.info(f"使用关键词模式: {search_patterns}")
     
-    videos = fetch_youtube_videos(search_query, MAX_RESULTS, search_patterns)
+    # 动态设置爬取数量
+    try:
+        max_results = int(input(f"请输入要爬取的视频数量（最大值 {MAX_RESULTS}）：").strip())
+        if max_results <= 0 or max_results > MAX_RESULTS:
+            print(f"无效输入，默认设置为 {MAX_RESULTS}")
+            max_results = MAX_RESULTS
+    except ValueError:
+        print(f"输入无效，默认设置为 {MAX_RESULTS}")
+        max_results = MAX_RESULTS
+    
+    videos = fetch_youtube_videos(search_query, max_results, search_patterns)
     print(f"共获取到 {len(videos)} 条符合条件的视频信息")
 
     save_to_csv(videos, OUTPUT_CSV)
     print(f"数据已保存到 {OUTPUT_CSV}")
 
     return videos  # 返回视频信息列表
+
 
 #####################################################################################################
 

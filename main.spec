@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('weex.png', '.')],
+    datas=[('weex.png', '.'), ('C:/Windows/Fonts/msyh.ttc', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
