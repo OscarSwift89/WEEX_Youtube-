@@ -17,10 +17,22 @@ Weex-Twitter/
 ## 环境依赖
 运行此项目需要以下环境与依赖：
 
-操作系统：Windows 10 或更高版本
-Python：Python 3.8 或更高版本
-浏览器：Google Chrome (版本 131 或更高)
-ChromeDriver：与 Chrome 浏览器版本匹配的 ChromeDriver
+* 操作系统：Windows 10 或更高版本
+* Python：Python 3.8 或更高版本
+* 浏览器：Google Chrome (版本 131 或更高)
+* ChromeDriver：与 Chrome 浏览器版本匹配的 ChromeDriver
 
 安装依赖库
 使用以下命令安装所需依赖
+pip install -r requirements.txt
+requirements.txt 包含以下主要依赖库：
+
+selenium
+webdriver-manager
+
+## 使用说明
+1. 配置环境
+确保 chromedriver.exe 位于项目根目录。
+将 chromedriver.exe 的路径配置到系统环境变量，或直接在代码中指定完整路径。
+2. 运行项目
+运行主程序入口：
