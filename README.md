@@ -18,6 +18,7 @@ Weex-Twitter/
 ├── requirements.txt      # 依赖库列表
 ├── README.md             # 项目说明文档
 └── chromedriver.exe      # ChromeDriver 执行文件
+```
 
 ## 系统要求
 操作系统：Windows 10/11 或 macOS
@@ -37,6 +38,7 @@ Python版本：Python 3.8 或以上
 
 #### 安装依赖库
   使用以下命令安装必要的 Python 库：
+  
   `pip install selenium wordcloud matplotlib numpy pillow`
 
 #### 检查 Chrome 版本
@@ -44,6 +46,7 @@ Python版本：Python 3.8 或以上
 
 #### 运行程序
   在命令行中执行以下命令：
+  
   `python main.py`
 
   根据提示输入搜索关键词和数据量。
