@@ -1,18 +1,14 @@
-# Web3_Exchange_Youtube爬虫程序
+# Weex-Twitter
 
-## 简介
-* 模拟人为操作打开浏览器
-* 根据关键字自动匹配搜索视频相关信息
-* 将收集的数据导入到csv文件中
+使用 Python 编写的爬虫，自动搜索 Weex 在 Twitter 上的相关内容并搜集数据。
 
-## 用法一
-1. 需要正确安装python且配置环境
-2. 检查依赖项，安装必要的库，例如selenium等
-3. 检查chrome版本是否为131，因为chromedriver为131专用
-4. 运行程序，数据搜集完后会导出到csv文件中，且生成词云图
+## 目录结构
 
-## 用法二
-1. 找到dist文件夹并打开
-2. 定位到main.exe文件
-3. 直接运行，输入想要的搜索词即可自动搜索并输出结果
-4. 可在终端中看到运行状况与错误情况
+```plaintext
+Weex-Twitter/
+├── main.py               # 主程序入口
+├── login.py              # 登录功能模块
+├── search.py             # 搜索功能模块
+├── requirements.txt      # 依赖库列表
+├── README.md             # 项目说明文档
+└── chromedriver.exe      # ChromeDriver 执行文件
