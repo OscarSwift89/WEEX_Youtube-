@@ -32,40 +32,40 @@ Python版本：Python 3.8 或以上
   * Pillow
 
 ## 使用说明
-### 用法一：Python 环境运行
-#### 1. 安装 Python
-  确保系统中已正确安装 Python，并配置环境变量。
+  ### 用法一：Python 环境运行
+  #### 1. 安装 Python
+    确保系统中已正确安装 Python，并配置环境变量。
 
-#### 2. 安装依赖库
-  使用以下命令安装必要的 Python 库：
+  #### 2. 安装依赖库
+    使用以下命令安装必要的 Python 库：
   
-  `pip install selenium wordcloud matplotlib numpy pillow`
+    `pip install selenium wordcloud matplotlib numpy pillow`
 
-#### 3. 检查 Chrome 版本
-  确认系统中安装的 Google Chrome 浏览器版本为 131，因为程序使用了适配该版本的 `ChromeDriver`。
+  #### 3. 检查 Chrome 版本
+    确认系统中安装的 Google Chrome 浏览器版本为 131，因为程序使用了适配该版本的 `ChromeDriver`。
 
-#### 4. 运行程序
-  在命令行中执行以下命令：
+  #### 4. 运行程序
+    在命令行中执行以下命令：
   
-  `python main.py`
+    `python main.py`
 
-  根据提示输入搜索关键词和数据量。
-  搜索完成后，程序会生成 `youtube_videos_filtered.csv` 文件和词云图 `youtube_titles_wordcloud.png`。
+    根据提示输入搜索关键词和数据量。
+    搜索完成后，程序会生成 `youtube_videos_filtered.csv` 文件和词云图 `youtube_titles_wordcloud.png`。
 
-#### 5. 检查结果
-  在程序目录下，查看生成的 CSV 文件和词云图。
+  #### 5. 检查结果
+    在程序目录下，查看生成的 CSV 文件和词云图。
 
-### 用法二：运行打包的 .exe 文件
+  ### 用法二：运行打包的 .exe 文件
 
-  打开 `dist` 文件夹，找到 `main.exe` 文件。
+    打开 `dist` 文件夹，找到 `main.exe` 文件。
 
-#### 1. 运行程序
-  双击 `main.exe` 文件，在弹出的窗口中：
+  #### 1. 运行程序
+    双击 `main.exe` 文件，在弹出的窗口中：
 
-#### 2. 输入搜索关键词。
-  程序会自动搜索，并生成 CSV 文件和词云图。
-#### 3. 查看结果
-  程序运行完成后，结果将输出到同级目录下的 `youtube_videos_filtered.csv` 和 `youtube_titles_wordcloud.png` 文件中。
+  #### 2. 输入搜索关键词。
+    程序会自动搜索，并生成 CSV 文件和词云图。
+  #### 3. 查看结果
+    程序运行完成后，结果将输出到同级目录下的 `youtube_videos_filtered.csv` 和 `youtube_titles_wordcloud.png` 文件中。
 
-#### 4. 监控运行状态
-  运行过程中，可在终端中查看日志信息，了解程序状态或错误信息（如未加载资源或网络问题）。
+  #### 4. 监控运行状态
+    运行过程中，可在终端中查看日志信息，了解程序状态或错误信息（如未加载资源或网络问题）。
