@@ -37,21 +37,21 @@ pip install selenium wordcloud matplotlib numpy pillow
 python main.py
 
 根据提示输入搜索关键词和数据量。
-搜索完成后，程序会生成 youtube_videos_filtered.csv 文件和词云图 youtube_titles_wordcloud.png。
+搜索完成后，程序会生成 `youtube_videos_filtered.csv` 文件和词云图 `youtube_titles_wordcloud.png`。
 检查结果
 在程序目录下，查看生成的 CSV 文件和词云图。
 
 ### 用法二：运行打包的 .exe 文件
-#### 找到可执行文件
-打开 dist 文件夹，找到 main.exe 文件。
+
+打开 `dist` 文件夹，找到 `main.exe` 文件。
 
 运行程序
-双击 main.exe 文件，在弹出的窗口中：
+双击 `main.exe` 文件，在弹出的窗口中：
 
 输入搜索关键词。
 程序会自动搜索，并生成 CSV 文件和词云图。
 查看结果
-程序运行完成后，结果将输出到同级目录下的 youtube_videos_filtered.csv 和 youtube_titles_wordcloud.png 文件中。
+程序运行完成后，结果将输出到同级目录下的 `youtube_videos_filtered.csv` 和 `youtube_titles_wordcloud.png` 文件中。
 
 监控运行状态
 运行过程中，可在终端中查看日志信息，了解程序状态或错误信息（如未加载资源或网络问题）。
