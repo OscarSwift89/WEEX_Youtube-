@@ -22,23 +22,24 @@ Python版本：Python 3.8 或以上
 
 ## 使用说明
 ### 用法一：Python 环境运行
-安装 Python
+#### 安装 Python
 确保系统中已正确安装 Python，并配置环境变量。
 
-安装依赖库
+#### 安装依赖库
 使用以下命令安装必要的 Python 库：
-pip install selenium wordcloud matplotlib numpy pillow
+`pip install selenium wordcloud matplotlib numpy pillow`
 
-检查 Chrome 版本
-确认系统中安装的 Google Chrome 浏览器版本为 131，因为程序使用了适配该版本的 ChromeDriver。
+#### 检查 Chrome 版本
+确认系统中安装的 Google Chrome 浏览器版本为 131，因为程序使用了适配该版本的 `ChromeDriver`。
 
-运行程序
+#### 运行程序
 在命令行中执行以下命令：
-python main.py
+`python main.py`
 
 根据提示输入搜索关键词和数据量。
 搜索完成后，程序会生成 `youtube_videos_filtered.csv` 文件和词云图 `youtube_titles_wordcloud.png`。
-检查结果
+
+#### 检查结果
 在程序目录下，查看生成的 CSV 文件和词云图。
 
 ### 用法二：运行打包的 .exe 文件
