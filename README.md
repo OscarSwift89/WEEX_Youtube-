@@ -1,38 +1,21 @@
-# Weex-Twitter
+# Web3 Exchange YouTube 爬虫程序
 
-使用 Python 编写的爬虫，自动搜索 Weex 在 Twitter 上的相关内容并搜集数据。
+## 简介
+Web3 Exchange YouTube 爬虫程序是一款自动化工具，可以模拟用户在浏览器中操作，通过指定关键词搜索 YouTube 视频，提取相关信息（如标题、链接、播放量、发布时间）并保存到 CSV 文件。同时，程序会生成视频标题的词云图，帮助直观分析关键词的分布和重要性。
 
-## 目录结构
+## 功能特色
+模拟人为操作打开浏览器，避免部分反爬限制。
+根据关键词自动匹配相关视频。
+导出符合条件的视频数据到 CSV 文件。
+生成基于视频标题的词云图，支持自定义形状。
 
-```plaintext
-Weex-Twitter/
-├── main.py               # 主程序入口
-├── login.py              # 登录功能模块
-├── search.py             # 搜索功能模块
-├── requirements.txt      # 依赖库列表
-├── README.md             # 项目说明文档
-└── chromedriver.exe      # ChromeDriver 执行文件
-```
-
-## 环境依赖
-运行此项目需要以下环境与依赖：
-
-* 操作系统：Windows 10 或更高版本
-* Python：Python 3.8 或更高版本
-* 浏览器：Google Chrome (版本 131 或更高)
-* ChromeDriver：与 Chrome 浏览器版本匹配的 ChromeDriver
-
-安装依赖库
-使用以下命令安装所需依赖
-pip install -r requirements.txt
-requirements.txt 包含以下主要依赖库：
-
-selenium
-webdriver-manager
-
-## 使用说明
-1. 配置环境
-确保 chromedriver.exe 位于项目根目录。
-将 chromedriver.exe 的路径配置到系统环境变量，或直接在代码中指定完整路径。
-2. 运行项目
-运行主程序入口：
+## 系统要求
+操作系统：Windows 10/11 或 macOS
+Python版本：Python 3.8 或以上
+浏览器：Google Chrome（推荐版本：131）
+依赖库：
+  * Selenium
+  * WordCloud
+  * Matplotlib
+  * NumPy
+  * Pillow
