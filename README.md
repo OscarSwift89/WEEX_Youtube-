@@ -9,6 +9,16 @@ Web3 Exchange YouTube 爬虫程序是一款自动化工具，可以模拟用户�
 导出符合条件的视频数据到 CSV 文件。
 生成基于视频标题的词云图，支持自定义形状。
 
+## 目录结构
+
+```plaintext
+Weex-Twitter/
+├── main.py               # 主程序入口
+├── dist/                 # 包含main.exe
+├── requirements.txt      # 依赖库列表
+├── README.md             # 项目说明文档
+└── chromedriver.exe      # ChromeDriver 执行文件
+
 ## 系统要求
 操作系统：Windows 10/11 或 macOS
 Python版本：Python 3.8 或以上
