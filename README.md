@@ -22,8 +22,11 @@ Weex-Twitter/
 
 ## 系统要求
 操作系统：Windows 10/11 或 macOS
+
 Python版本：Python 3.8 或以上
+
 浏览器：Google Chrome（推荐版本：131）
+
 依赖库：
   * Selenium
   * WordCloud
